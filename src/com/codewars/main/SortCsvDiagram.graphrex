@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<model:RegexModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:model="http://www.crotonresearch.com/graphrex/model" id="w14934893050820" regexTextBytes="FEFF005C006E" start="w14936575701090" finish="w14936575701101">
+  <nodes xsi:type="model:StartNode" name="Start" id="w14936575701090" comment="Start" title="Start" x="25" y="17" width="15" height="17">
+    <outputs name="output" id="w14936575701102" edges="w14936575701103"/>
+    <inputs name="input" id="w14936575701104"/>
+  </nodes>
+  <nodes xsi:type="model:StringMatchBox" name="String" id="w14936575701115" startLine="0" startPos="0" stopLine="0" stopPos="1" x="65" y="15" width="25" height="20" matchStringBytes="FEFF000A">
+    <outputs name="output" id="w14936575701116" edges="w14936575701117"/>
+    <inputs name="input" id="w14936575701118" edges="w14936575701103"/>
+  </nodes>
+  <nodes xsi:type="model:FinishNode" name="Finish" id="w14936575701101" comment="Finish" title="Finish" x="115" y="17" width="15" height="17">
+    <outputs name="output" id="w14936575701119"/>
+    <inputs name="input" id="w149365757011110" edges="w14936575701117"/>
+  </nodes>
+  <edges id="w14936575701103" target="w14936575701118" source="w14936575701102"/>
+  <edges id="w14936575701117" target="w149365757011110" source="w14936575701116"/>
+</model:RegexModel>
